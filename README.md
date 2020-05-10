@@ -1,107 +1,46 @@
 # Cars4Ads
 
-##	Identification of the problem you are trying to solve by building this particular marketplace app.
 
+## The Application and its Purpose
 
+Cars4Ads is a webpage designed to connect business owners, great and small, with car owners willing to rent some of their external car space for some extra cash.
+Car owners can post ads with attractive details like showing their location, their usual driving routes, how far they drive on average, pictures of their car space with a description of the area of the car that they're happy to use as rent space. Otherwise business owners can also post ads on the webpage showing their advertisement plans for a car, an image, size of the ad, its preferable location i.e the rear window or side doors, prefered area for the ad to be active
 
-##	Why is it a problem that needs solving?
+There is currently a webpage/business that allows the business owner or the car owner to contact this business via an online application of which then the applicant must wait to be contacted by this website once they have found a candidate. The problem Cars4Ads aims to solve is by allowing the business owners and car owners to deal with each other directly, immediatly, more transparently while cutting out the unnecessarily highly profitable business in the middle. Also, by cutting out the middle man, the car owners and business owners will be able to negotiate on price or set a fixed price in their ads so either of the two can potentially expect to save or make more on the their advertising costs and car rental profits. This problem needs to be solved to help the smaller businesses get into marketing their business more cost effectively and allows them to have more control of where their advertisements get placed and who to, as well as potentially leaving more money in the pockets of both the business and car owner. 
 
+### Find the deployed website here: https://cars4ads.herokuapp.com/
 
-
-##	A link (URL) to your deployed app (i.e. website)
-
-
-
-###	A link to your GitHub repository (repo).
-- Ensure the repo is accessible by your Educators
+###	Find the Git Repositories here:
+#### https://github.com/lukelovekin/cars-4-ads
+#### https://github.com/lukelovekin/LukeLovekin_T2A2
+- Ensure the repo is accessible by your Educators********
 
 
 
 ###	Description of your marketplace app (website), including:
-- Purpose
+
 - Functionality / features
+
 - Sitemap
+
 - Screenshots
+
 - Target audience
+
 - Tech stack (e.g. html, css, deployment platform, etc)
+    - Ruby on rails
+    - Ruby
+    - VsCode
+    - Coolors
+    - Color Picker
+    - Bootstrap
+    - Heroku
+    - Amazon S3 Bucket
+    - Trello
 
 
 
 ###	User stories for your app
-
-
-
-###	Wireframes for your app
-
-
-
-###	An ERD for your app
-
-
-
-###	Explain the different high-level components (abstractions) in your app
-
-
-
-###	Detail any third party services that your app will use
-
-
-
-###	Describe your projects models in terms of the relationships (active record associations) they have with each other
-
-
-
-###	Discuss the database relations to be implemented in your application
-
-
-
-###	Provide your database schema design
-
-
-
-###	Describe the way tasks are allocated and tracked in your project
-
-Explain the different high-level components (abstractions) in your App
-6.0 to >5.0 pts
-HD
-Precisely explains and shows understanding of the different high-level components of the app
-
-
-Detail any third party services that your App will use
-6.0 to >5.0 pts
-HD
-Includes a complete and detailed description of third party services used in the app
-
-
-Identify the problem you’re trying to solve by building this particular marketplace App? Why is it a problem that needs solving?
-6.0 to >5.0 pts
-HD
-Demonstrates a full understanding of the problems that exist in a relevant marketplace that needs disrupting
-
-
-Describe your project’s models in terms of the relationships (active record associations) they have with each other
-6.0 to >5.0 pts
-HD
-Complete discussion of the project’s models with an understanding of how its active record associations function
-
-
-Discuss the database relations to be implemented
-6.0 to >5.0 pts
-HD
-Provides coherent discussion of the database relations, with reference to the ERD
-
-
-Discuss the database relations to be implemented
-6.0 to >5.0 pts
-HD
-Provides coherent discussion of the database relations, with reference to the ERD
-
-
-Provide your database schema design
-6.0 to >5.0 pts
-HD
-Flawless, complex, complete, and well thought through ERDs provided
-
 
 Provide User stories for your App
 6.0 to >5.0 pts
@@ -109,11 +48,71 @@ HD
 User stories are well thought out, relevant, and comprehensively cover the needs of the app
 
 
+
+###	Wireframes for your app
+
 Provide Wireframes for your App
 6.0 to >5.0 pts
 HD
 More than five detailed and well designed wireframes provided, for several different screen sizes (as required for the app)
 
+
+
+###	An ERD for your app
+
+ERD provided represents a normalised database model
+6.0 to >5.0 pts
+HD
+Meets D with no duplication and ideal definition of entities.
+
+
+
+###	Explain the different high-level components (abstractions) in your app
+
+Explain the different high-level components (abstractions) in your App
+6.0 to >5.0 pts
+HD
+Precisely explains and shows understanding of the different high-level components of the app
+
+
+
+###	Detail any third party services that your app will use
+
+Detail any third party services that your App will use
+6.0 to >5.0 pts
+HD
+Includes a complete and detailed description of third party services used in the app
+
+
+
+###	Describe your projects models in terms of the relationships (active record associations) they have with each other
+
+Describe your project’s models in terms of the relationships (active record associations) they have with each other
+6.0 to >5.0 pts
+HD
+Complete discussion of the project’s models with an understanding of how its active record associations function
+
+
+
+###	Discuss the database relations to be implemented in your application
+
+Discuss the database relations to be implemented
+6.0 to >5.0 pts
+HD
+Provides coherent discussion of the database relations, with reference to the ERD
+
+
+
+###	Provide your database schema design
+
+Provide your database schema design
+6.0 to >5.0 pts
+HD
+Flawless, complex, complete, and well thought through ERDs provided
+
+
+
+###	Describe the way tasks are allocated and tracked in your project
 
 Describe the way tasks are planned and tracked in your project
 6.0 to >5.0 pts
@@ -121,12 +120,8 @@ HD
 Shows significant planning for how tasks are planned and tracked, including a full description of the process and of the tools used
 
 
-ERD provided represents a normalised database model
-6.0 to >5.0 pts
-HD
-Meets D with no duplication and ideal definition of entities.
 
-===============================
+======================================
 
 
 
