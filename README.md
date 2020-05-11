@@ -1,4 +1,14 @@
-# Cars4Ads
+# T2A2 - Marketplace Project
+
+# Cars4Ads LOGO HEAR
+
+### Deployed website here: https://cars4ads.herokuapp.com/
+
+###	Git Repositories here:
+#### https://github.com/lukelovekin/cars-4-ads
+#### https://github.com/lukelovekin/LukeLovekin_T2A2
+- Ensure the repo is accessible by your Educators********
+- Just use one
 
 
 ## The Application and its Purpose
@@ -8,35 +18,9 @@ Car owners can post ads with attractive details like showing their location, the
 
 There is currently a webpage/business that allows the business owner or the car owner to contact this business via an online application of which then the applicant must wait to be contacted by this website once they have found a candidate. The problem Cars4Ads aims to solve is by allowing the business owners and car owners to deal with each other directly, immediatly, more transparently while cutting out the unnecessarily highly profitable business in the middle. Also, by cutting out the middle man, the car owners and business owners will be able to negotiate on price or set a fixed price in their ads so either of the two can potentially expect to save or make more on the their advertising costs and car rental profits. This problem needs to be solved to help the smaller businesses get into marketing their business more cost effectively and allows them to have more control of where their advertisements get placed and who to, as well as potentially leaving more money in the pockets of both the business and car owner. 
 
-### Find the deployed website here: https://cars4ads.herokuapp.com/
+Target audience for Cars4Ads will be, for the car owner users side of the webpage, anybody aged 17 to max driving age looking to make a bit of extra pocket money for going about their day as they would normally. Otherwise any age at all, for anyone looking to advertise their business or product in an easy, low cost way. 
 
-###	Find the Git Repositories here:
-#### https://github.com/lukelovekin/cars-4-ads
-#### https://github.com/lukelovekin/LukeLovekin_T2A2
-- Ensure the repo is accessible by your Educators********
-
-
-
-###	Description of your marketplace app (website), including:
-
-- Functionality / features
-
-- Sitemap
-
-- Screenshots
-
-- Target audience
-
-- Tech stack (e.g. html, css, deployment platform, etc)
-    - Ruby on rails
-    - Ruby
-    - VsCode
-    - Coolors
-    - Color Picker
-    - Bootstrap
-    - Heroku
-    - Amazon S3 Bucket
-    - Trello
+## Functionality and features
 
 
 
@@ -47,7 +31,9 @@ Provide User stories for your App
 HD
 User stories are well thought out, relevant, and comprehensively cover the needs of the app
 
+## Sitemap
 
+## Screenshots
 
 ###	Wireframes for your app
 
@@ -57,7 +43,6 @@ HD
 More than five detailed and well designed wireframes provided, for several different screen sizes (as required for the app)
 
 
-
 ###	An ERD for your app
 
 ERD provided represents a normalised database model
@@ -65,6 +50,17 @@ ERD provided represents a normalised database model
 HD
 Meets D with no duplication and ideal definition of entities.
 
+
+## Tech stack (e.g. html, css, deployment platform, etc)
+    - Ruby on rails
+    - Ruby
+    - VsCode
+    - Coolors
+    - Color Picker
+    - Bootstrap
+    - Heroku
+    - Amazon S3 Bucket
+    - Trello
 
 
 ###	Explain the different high-level components (abstractions) in your app
@@ -104,7 +100,7 @@ Provides coherent discussion of the database relations, with reference to the ER
 
 
 ###	Provide your database schema design
-
+ PIC AND A DESCRIPTION
 Provide your database schema design
 6.0 to >5.0 pts
 HD
@@ -112,7 +108,13 @@ Flawless, complex, complete, and well thought through ERDs provided
 
 
 
-###	Describe the way tasks are allocated and tracked in your project
+###	Project Planning and Management
+
+After thoroughly going over the assignments criteria and Rubrik
+
+PIC OF TRELLOBOARD 1ST (MVP)
+![initial trello](./docs/trello-initial.PNG)
+AND END TRELLO (ONCE COMPLETE)
 
 Describe the way tasks are planned and tracked in your project
 6.0 to >5.0 pts
