@@ -178,6 +178,8 @@ Explain the MVC model in full detail
 
 ##	Project Planning and Management
 
+Trello Board Link: https://trello.com/b/hsy68wli/cars4ads
+
 Starting with the planning stage of the project, after thoroughly going over the assignments criteria and Rubrik, I started with an Minimum Viable Product (MVP) idea. Starting with a Trello board, I split up the assignment's MVP requirements into To Do cards as well as MVP user stories. The cards include checklists, dates to be completed as well as colour coded labels (red being MVP, most important) to highlight their importance as well as their difficulty/time cost. After the Trello board immediately set up and layout my Git Repositories ready for the rest of the project. In the assignments repo, I layout the README.md with everthing it should include while placing the appropriate "HD" rubrik goals under the matching headings so I know what I should be aiming for when completing the Documentation.
 
 MVP intial Trello board at the start of the project
