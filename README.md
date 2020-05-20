@@ -38,7 +38,7 @@ Using Ads4Cars, from the home page, anyone can see all posts created by other us
 
 ##	User Stories
 
-<details open>
+<details closed>
 <summary>MVP User Stories</summary>
 
 Users can: 
@@ -61,38 +61,38 @@ Users can:
 
 ## Screenshots
 
-<details open>
+<details closed>
 <summary>Screenshots</summary>
 
-![initial wireframe](./docs/screen1.PNG)
-![initial wireframe](./docs/screen2.PNG)
-![initial wireframe](./docs/screen3.PNG)
-![initial wireframe](./docs/screen4.PNG)
-![initial wireframe](./docs/screen5.PNG)
+![Screenshot](./docs/screen1.PNG)
+![Screenshot](./docs/screen2.PNG)
+![Screenshot](./docs/screen3.PNG)
+![Screenshot](./docs/screen4.PNG)
+![Screenshot](./docs/screen5.PNG)
 
 </details>
 
 ##	Wireframes
 
-<details open>
+<details closed>
 <summary>Homepage</summary>
 
 ![initial wireframe](./docs/homepages.PNG)
 </details>
 
-<details open>
+<details closed>
 <summary>Show Post</summary>
 
 ![initial wireframe](./docs/show-posts.PNG)
 </details>
 
-<details open>
+<details closed>
 <summary>Create Post</summary>
 
 ![initial wireframe](./docs/create-post.PNG)
 </details>
 
-<details open>
+<details closed>
 <summary>Signup</summary>
 
 ![initial wireframe](./docs/signup.PNG)
@@ -107,7 +107,7 @@ Users can:
 
 ## Tech stack (e.g. html, css, deployment platform, etc)
 
-<details open>
+<details closed>
 <summary>Tech Stack</summary>
 
 - Ruby on rails 
@@ -129,7 +129,7 @@ Users can:
     - A hypertext Markup Language used to structure the web app.
 
 </details>
-<details open>
+<details closed>
 <summary>Ruby Gems</summary>
 
 Other than rails default gems, gem that were used include
@@ -139,7 +139,7 @@ Other than rails default gems, gem that were used include
     - This gem is needed in conjuction with active storage and Amazons S3 Bucket to store images on the internet
 
 </details>
-<details open>
+<details closed>
 <summary>Third Party Services</summary>
 
 - Heroku
