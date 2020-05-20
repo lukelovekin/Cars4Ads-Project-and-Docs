@@ -152,7 +152,7 @@ Rails uses the MVC ( Model, View, Controller) architecture to create a webpage. 
 Starting at the browser, the browser communicates to the controller which decides what to do next based on the users' actions. The controller communicates to the model when it needs to which then the using the model can communicate with the database and bring information back and sends the results to the view which will end up getting returned to the browser. 
 
 ## ERD
-![final erd](./docs/mvp-erd12345.PNG)
+![final erd](./docs/mvp-erd123456.PNG)
 
 
 ##  Cars4Ads Models Relationships
