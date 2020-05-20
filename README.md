@@ -1,6 +1,6 @@
 # T2A2 - Marketplace Project
 
-![logo](./docs/logo-2.PNG)
+![logo](./docs/logo.PNG)
 
 ### Deployed website here: https://cars4ads.herokuapp.com/
 
