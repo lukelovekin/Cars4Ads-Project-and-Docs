@@ -98,13 +98,6 @@ Users can:
 ![initial wireframe](./docs/signup.PNG)
 </details>
 
-
-
-
-## ERD
-
-![initial erd](./docs/mvp-erd12.PNG)
-
 ## Tech stack (e.g. html, css, deployment platform, etc)
 
 <details closed>
@@ -129,6 +122,7 @@ Users can:
     - A hypertext Markup Language used to structure the web app.
 
 </details>
+
 <details closed>
 <summary>Ruby Gems</summary>
 
@@ -139,6 +133,7 @@ Other than rails default gems, gem that were used include
     - This gem is needed in conjuction with active storage and Amazons S3 Bucket to store images on the internet
 
 </details>
+
 <details closed>
 <summary>Third Party Services</summary>
 
@@ -150,26 +145,30 @@ Other than rails default gems, gem that were used include
     - Stores images on the Amazon AWS cloud keeping image uploads dynamic and keeping the webpage from running slower
 </details>
 
-
 ##	Explain the different high-level components (abstractions) in your app
 
+Rails uses the MVC ( Model, View, Controller) architecture to create a webpage. The models, also known as the ActiveRecord, are the objects, in this case, users, posts, comments and images. These models include data fields and types and encloses  data in the database which is Postgresql for this application. The view, also known as ActionView, is what the user sees and interacts with, the html, css and javascript. The controller, also known as ActionController, handles the decisions and processes and responds to events like user action and can make changes the views and the models.
 
-Explain the MVC model in full detail
-***Precisely explains and shows understanding of the different high-level components of the app***
+Starting at the browser, the browser comminicates to the controller which decides what to do next based on the users actions. The controller communicates to the model when it needs to which then the using the model can communicate with the database and bring information back and sends the results to the view which will end up getting returned to the browser. 
+
+## ERD
+![initial erd](./docs/mvp-erd1234.PNG)
+
 
 ##	Describe your projects models in terms of the relationships (active record associations) they have with each other
 
 ***Describe your project’s models in terms of the relationships (active record associations) they have with each other***
 ***Complete discussion of the project’s models with an understanding of how its active record associations function***
 
+
+
+
+
 ##	Discuss the database relations to be implemented in your application
 
 ***Discuss the database relations to be implementedProvides coherent discussion of the database relations, with reference to the ERD***
 
-###	Provide your database schema design
 
-***PIC AND A DESCRIPTION***
-***Provide your database schema design Flawless, complex, complete, and well thought through ERDs provided***
 
 ##	Project Planning and Management
 
@@ -191,7 +190,87 @@ All throughout the day, things that come into mind that will need doing or may c
 After making sure I have at least attempted a "HD" in all fields, I go over project again to make sure it's all ready and finalised, ready for hand in.
 End trello board by the end of the project, once extra cards and features were added.
 
-***INSERT PIC HERE***
+Trello Board day before hand-in
+![end trello](./docs/trello-end.PNG)
+
+## Database Schema Design
+
+<details closed>
+<summary>schema.rb</summary>
+
+```
+ActiveRecord::Schema.define(version: 2020_05_15_034905) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "active_storage_attachments", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "record_type", null: false
+    t.bigint "record_id", null: false
+    t.bigint "blob_id", null: false
+    t.datetime "created_at", null: false
+    t.index ["blob_id"], name: "index_active_storage_attachments_on_blob_id"
+    t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
+  end
+
+  create_table "active_storage_blobs", force: :cascade do |t|
+    t.string "key", null: false
+    t.string "filename", null: false
+    t.string "content_type"
+    t.text "metadata"
+    t.bigint "byte_size", null: false
+    t.string "checksum", null: false
+    t.datetime "created_at", null: false
+    t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "post_id", null: false
+    t.string "body"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["post_id"], name: "index_comments_on_post_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "body"
+    t.decimal "price"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_posts_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "age"
+    t.string "phone_number"
+    t.string "username"
+    t.string "suburb"
+    t.string "state"
+    t.boolean "is_driver"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "comments", "posts"
+  add_foreign_key "comments", "users"
+  add_foreign_key "posts", "users"
+end
+
+```
 
 ======================================
 
