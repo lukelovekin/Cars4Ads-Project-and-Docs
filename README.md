@@ -4,11 +4,9 @@
 
 ### Deployed website here: https://cars4ads.herokuapp.com/
 
-###	Git Repositories here:
-#### https://github.com/lukelovekin/cars-4-ads
-#### https://github.com/lukelovekin/LukeLovekin_T2A2
+###	Git Repositories here: https://github.com/lukelovekin/LukeLovekin_T2A2
 
-## ***(- Ensure the repo is accessible by your Educators)( Just use one)***
+
 
 ## The Application and its Purpose
 
@@ -21,19 +19,21 @@ Target audience for Cars4Ads will be, for the car owner users side of the webpag
 
 ## Functionality and Features
 
-Using Ads4Cars, from the home page, anyone can see all posts created by other users but once the user logs in they can also contact the owner of the posts as well as create their own posts. The drivers posts will include details about the driver like where they're located, what car they have for advertising, where they travel often as well as the price the happy to advertise for. The advertisors add will include information like, where they are looking for a driver, ideal size of business logo, price they're willing to pay. Both groups of poster will be able to attach images for a more succesful post. ***As well as***
+Using Ads4Cars, from the home page, anyone can see all posts created by other users with the ability to filter driver or advertiser only ads. Once the user logs in they can create their own posts as well as contact the owners of other posts, whether its via a comment on their post page or contacting them using their contact details also shown on their post page. The drivers posts will include details about the driver like where they're located, what car they have for advertising, where they travel often as well as the price they're happy to advertise for. The advertisors add will include information like, where they are looking for a driver, ideal size of business logo, price they're willing to pay. Both groups of posters will be able to attach images for a more succesful post. 
 
 <details open>
 <summary>Webpage Features</summary>
 
-- create account with secure password (user account)
-- authentication and authorisation (explain)
-- CRUD posts (explain)
-- scroll through other posts
-- message an owner of an add
-- category search (driver, advertisor, state)
-- image upload
-- *** add or remove extra features here***
+- Create account with a secure password
+- Authentication upon sign in
+- Authorisation.
+    - Allowing only owners of posts to edit and delete their posts
+    - Allowing only users signed in to make new posts and comment on others posts
+- The ability to create, read, update and delete posts and comments
+- View everyones posts on the homepage
+- Contacting the owner of an add via comments.
+- Filter ads buy driver ads or advertisers ads
+- Upload many images to posts to help with the advertisement of an ad.
 </details>
 
 ##	User Stories
@@ -45,35 +45,30 @@ Users can:
 - Create accounts/profile
 - View all post without having to sign up
 - Sign in, sign up, log out
-- Create posts
-- Write and view messages to and from other users
+- Create, edit, update and delete posts
+- Navigate through pages with a top navbar
+- Write and view comments to and from other users
 - Attach images
 - Access basic information about the site
-- Filter posts using categories
+- Filter posts using Driver or Advertiser categories
 - Enjoy a nice design
-- 
-- ***add more or less here when finished ****
-</details>
-
-<details open>
-<summary>Extra User Stories</summary>
-
-Users can also:
-- Use a trusted payment method 
-- add more or less here when finished **********
 </details>
 
 ## Sitemap
 
-![initial sitemap](./docs/sitemap-draft2.PNG)
+![initial sitemap](./docs/sitemap-draft3.PNG)
 
 
 ## Screenshots
 
-# ***ADD SCREENSHOTS HERE***
 <details open>
 <summary>Screenshots</summary>
 
+![initial wireframe](./docs/screen1.PNG)
+![initial wireframe](./docs/screen2.PNG)
+![initial wireframe](./docs/screen3.PNG)
+![initial wireframe](./docs/screen4.PNG)
+![initial wireframe](./docs/screen5.PNG)
 
 </details>
 
@@ -106,53 +101,53 @@ Users can also:
 
 
 
-###	An ERD for your app
+## ERD
 
-![initial erd](./docs/mvp-erd.PNG)
-
-ERD provided represents a normalised database model
-6.0 to >5.0 pts
-HD
-Meets D with no duplication and ideal definition of entities.
-
+![initial erd](./docs/mvp-erd12.PNG)
 
 ## Tech stack (e.g. html, css, deployment platform, etc)
 
 <details open>
 <summary>Tech Stack</summary>
 
-- Ruby on rails
+- Ruby on rails 
+    - The server-side web framework. A model-view-controller framework that uses Ruby as the programming language
 - Ruby
+    - Programming language, version 2.7.1
 - VsCode
-- Coolors
-- Color Picker
+    - Text editor
 - Bootstrap & SCSS
-- Heroku
-- Amazon S3 Bucket
+    - one of the most popular frameworks for styling and making webpages responsive The code used for styling the website
+    - Bootstrap also uses javascript for styling.
 - Trello
+    -  A Kanban software used to help with project management
 - Lucid chart
+    - Software used to draw Sitemaps and ERDs and other charts and diagrams
 - Postgresql
+    - Reltaional database management system which uses Structured query language (SQL) to set up the database and hold data for the webpage. 
 - HTML 5
-- Javascript
-- *** add or remove extra features here***
+    - A hypertext Markup Language used to structure the web app.
+
 </details>
 <details open>
 <summary>Ruby Gems</summary>
 
-- devise
-- rollify
+Other than rails default gems, gem that were used include
+- Devise
+    - A very common, battle tested, open sourced gem used to authenticate new and existing user also making it easy for allowing user authorisation to hide certain things from certain users. Devise comes with views and controllers that can be used for almost any webpage
 - aws-sdk-s3
-- *** add or remove extra features here***
+    - This gem is needed in conjuction with active storage and Amazons S3 Bucket to store images on the internet
+
 </details>
 <details open>
 <summary>Third Party Services</summary>
 
 - Heroku
+    - An online deployment website/ server/cloud used for hosting my website
 - Github
+    - An git repository host online
 - Amazon S3 Bucket
-- *** add or remove extra features here***
-***Take these from tech stack and explain***
-***Includes a complete and detailed description of third party services used in the app***
+    - Stores images on the Amazon AWS cloud keeping image uploads dynamic and keeping the webpage from running slower
 </details>
 
 
@@ -201,54 +196,10 @@ End trello board by the end of the project, once extra cards and features were a
 ======================================
 
 
-
-Model implementation represents a normalised database model
-6.0 to >5.0 pts
-HD
-Meets D with no duplication and ideal model implementation.
-
-
-
-Database design appropriately addresses the requirements of a complex scenario
-6.0 to >5.0 pts
-HD
-Meets D and represents a highly optimised solution.
-
-
-
-Implemented controllers demonstrate correct use of commands to query the database infrastructure
-6.0 to >5.0 pts
-HD
-Meets D and does so elegantly (queries chosen are the most elegant to achieve the result).
-
-
-
-Queries implemented provide correct data for the given scenario
-6.0 to >5.0 pts
-HD
-Meets CR and demonstrates exceptional understanding of database queries.
-
-
-
 Code comments demonstrate how the queries implemented correctly represent the database structure
 6.0 to >5.0 pts
 HD
 Meets D and all comments are exceptionally written.
-
-
-
-Identify and use appropriate model methods
-6.0 to >5.0 pts
-HD
-Identifies and uses appropriate model methods for querying on self and its relationships, extends models scope where appropriate
-
-
-
-Minimising database calls needed to perform an action
-6.0 to >5.0 pts
-HD
-Minimise all database calls and implement eager loading where appropriate
-
 
 
 Sanitise and validates input to maintain data integrity

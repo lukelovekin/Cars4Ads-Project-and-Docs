@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @post.user.full_name %>
+</p>
+
+<p>
+  <strong>Phone Number:</strong>
+  <%= @post.user.phone_number %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @post.user.age %>
+</p>
+
+<p>
+  <strong>Suburb:</strong>
+  <%= @post.user.suburb %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @post.user.state %>
+</p>
+<p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @post.price %>
+</p>
+
+  <strong>Body:</strong>
+  <%= @post.body %>
+</p>
+
+<% @post.post_pics.each do |pic| %>
+  <p>
+  <%= image_tag pic, width: "400", height: "400" %>
+  </p>
+<% end %>
+
+<% if user_signed_in? && current_user.id == @post.user_id %> 
+  <%= link_to 'Edit', edit_post_path(@post) %> 
+<%end%>
+
+<h4>Comments</h4>
+
+<div>
+  <p>
+    <% @post.comments.each do |comment| %>
+      <tr><%= @post.created_at %></tr>
+      <tr><%= comment.user.first_name %></tr> 
+      <tr><%=comment.body%></tr>
+        <% if user_signed_in? && current_user.id == comment.user_id %>
+          <%= link_to "Delete", "/posts/#{@post.id}/comments/#{comment.id}", method: :delete %>
+        <% end%>
+      <br>
+    <% end %>
+  </p>
+</div>
+
+<% if user_signed_in? %>
+  <%=form_with(model: Comment.new, local: true, url: "/posts/#{@post.id}/comments/") do |form| %>
+    <%= form.label :body%>%
+    <%= form.text_field :body %>
+    <%= form.submit %>
+  <%end %>
+<% end %>
+
+
+<%= link_to 'Back', root_path %>
+
+

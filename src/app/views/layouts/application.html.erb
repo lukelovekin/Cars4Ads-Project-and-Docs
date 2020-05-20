@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, height = device-height, initial-scale = 1">
+  
+    <title>Cars4ads</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    
+    <%= render "layouts/navbar" %>
+    <div class="container-fluid text-center">
+
+            <p class="alert"><%= alert %></p>
+
+          <%= yield %>
+  </body>
+</html>

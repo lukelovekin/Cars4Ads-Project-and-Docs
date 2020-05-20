@@ -1,0 +1,29 @@
+
+    <nav class="navbar navbar-fixed-bottom">
+        <div class="container-fluid">
+
+            <section><%= link_to image_tag("logo-2.png" ), root_path%></section>
+
+            <section><%= link_to "Advertisers", advertiser_path %> |
+                <%= link_to "Drivers", driver_path %>
+            </section>
+
+            <section>
+            <%# <%= link_to "Search" %> 
+                <% if user_signed_in?%>
+                    | <%= link_to "Profile", user_path(current_user) %>|
+                    <%= link_to "Post an Ad", new_post_path %> | 
+                    <%= link_to "About", about_path %>
+                <%end%>
+            </section>
+
+            <% if user_signed_in?%>
+            <section><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></section>
+            <% else %>
+            <section><%= link_to "Sign In", user_session_path %> |
+            <%= link_to "Sign Up", new_user_registration_path %>
+            </section>
+            <%end%>'
+        </div>    
+    </nav> 
+
