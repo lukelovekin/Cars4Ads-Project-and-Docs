@@ -42,13 +42,13 @@ Using Ads4Cars, from the home page, anyone can see all posts created by other us
 <summary>MVP User Stories</summary>
 
 Users can: 
-- Create accounts/profile
+- Create account/profile
 - View all post without having to sign up
 - Sign in, sign up, log out
 - Create, edit, update and delete posts
 - Navigate through pages with a top navbar
 - Write and view comments to and from other users
-- Attach images
+- Attach images to their posts
 - Access basic information about the site
 - Filter posts using Driver or Advertiser categories
 - Enjoy a nice design
