@@ -4,7 +4,7 @@
 
 ### Deployed website here: https://cars4ads.herokuapp.com/
 
-###	Git Repositories here: https://github.com/lukelovekin/LukeLovekin_T2A2
+###	Git Repository here: https://github.com/lukelovekin/LukeLovekin_T2A2
 
 
 
@@ -21,7 +21,7 @@ Target audience for Cars4Ads will be, for the car owner users side of the webpag
 
 Using Ads4Cars, from the home page, anyone can see all posts created by other users with the ability to filter driver or advertiser only ads. Once the user logs in they can create their own posts as well as contact the owners of other posts, whether its via a comment on their post page or contacting them using their contact details also shown on their post page. The drivers posts will include details about the driver like where they're located, what car they have for advertising, where they travel often as well as the price they're happy to advertise for. The advertisors add will include information like, where they are looking for a driver, ideal size of business logo, price they're willing to pay. Both groups of posters will be able to attach images for a more succesful post. 
 
-<details open>
+<details closed>
 <summary>Webpage Features</summary>
 
 - Create account with a secure password
