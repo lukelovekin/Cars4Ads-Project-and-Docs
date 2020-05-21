@@ -6,8 +6,6 @@
 
 ### Git Repository here: https://github.com/lukelovekin/LukeLovekin_T2A2
 
-
-
 ## The Application and its Purpose
 
 Cars4Ads is a webpage designed to connect business owners, great and small, with car owners willing to rent some of their external car space for some extra cash.
@@ -152,7 +150,7 @@ Rails uses the MVC ( Model, View, Controller) architecture to create a webpage. 
 Starting at the browser, the browser communicates to the controller which decides what to do next based on the users' actions. The controller communicates to the model when it needs to which then the using the model can communicate with the database and bring information back and sends the results to the view which will end up getting returned to the browser. 
 
 ## ERD
-![final erd](./docs/mvp-erd123456.PNG)
+![final erd](./docs/mvp-erd12.PNG)
 
 
 ##  Cars4Ads Models Relationships
@@ -255,7 +253,7 @@ ActiveRecord::Schema.define(version: 2020_05_15_034905) do
     t.bigint "user_id", null: false
     t.string "body"
     t.decimal "price"
-    t.boolean "is_driver"
+    t.boolean "car_owner"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_posts_on_user_id"
